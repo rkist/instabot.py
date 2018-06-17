@@ -20,6 +20,8 @@ def ReadFileData(filePath):
 loginData = ReadFileData(r"clinibem\login.botconf")
 unwantedUsernameList = ReadFileData(r"clinibem\unwanted_username_list.botconf")
 unfollowWhitelist = ReadFileData(r"clinibem\unfollow_whitelist.botconf")
+tagList = ReadFileData(r"clinibem\tag_list.botconf")
+tagBlacklist = ReadFileData(r"clinibem\tag_blacklist.botconf")
 
 
 bot = InstaBot(
@@ -27,8 +29,8 @@ bot = InstaBot(
     password=loginData[1],
     like_per_day=500,
     comments_per_day=0,
-    tag_list=['follow4follow', 'f4f', 'cute'],
-    tag_blacklist=['rain', 'thunderstorm'],
+    tag_list = tagList,
+    tag_blacklist = tagBlacklist,
     user_blacklist={},
     max_like_for_one_tag=50,
     follow_per_day=300,
