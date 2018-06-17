@@ -101,4 +101,4 @@ ENV/
 .vscode
 
 *.db
-*.botconf
+login.botconf
