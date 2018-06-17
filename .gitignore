@@ -98,6 +98,8 @@ ENV/
 .idea/
 *.iml
 
-*.login
+*.botconf
 
 .vscode
+
+*.db
