@@ -700,9 +700,10 @@ class InstaBot:
                 self.new_auto_mod_unfollow()
                 # ------------------- Comment -------------------
                 self.new_auto_mod_comments()
-                # Bot iteration in 1 sec
-                time.sleep(3)
-                # print("Tic!")
+
+                sleepTime = random.randrange(2,8)
+                time.sleep(sleepTime)
+                print("Tic! {sleepTime}")
             else:
                 print("sleeping until {hour}:{min}".format(hour=self.start_at_h,
                                                            min=self.start_at_m), end="\r")
