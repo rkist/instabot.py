@@ -49,10 +49,9 @@ bot = InstaBot(
                   ["foto", "imagem"],
                   ["é", "é realmente"],
                   ["linda", "fantástica"],
-                  [".", "..", "...", "!", "!!", "!!!"]],
+                  ["...", "!", "!!", "!!!"]],
     # Use unwanted_username_list to block usernames containing a string
     ## Will do partial matches; i.e. 'mozart' will block 'legend_mozart'
-    ### 'free_followers' will be blocked because it contains 'free'
     unwanted_username_list = confs["unwantedUsernameList"],
     unfollow_whitelist = confs["unfollowWhitelist"])
 
@@ -63,10 +62,6 @@ while True:
     #print("#### MODE 3 = MODIFIED MODE : UNFOLLOW USERS WHO DON'T FOLLOW YOU BASED ON RECENT FEED")
     #print("##### MODE 4 = MODIFIED MODE : FOLLOW USERS BASED ON RECENT FEED ONLY")
     #print("###### MODE 5 = MODIFIED MODE : JUST UNFOLLOW EVERYBODY, EITHER YOUR FOLLOWER OR NOT")
-
-    ################################
-    ##  WARNING   ###
-    ################################
 
     # DON'T USE MODE 5 FOR A LONG PERIOD. YOU RISK YOUR ACCOUNT FROM GETTING BANNED
     ## USE MODE 5 IN BURST MODE, USE IT TO UNFOLLOW PEOPLE AS MANY AS YOU WANT IN SHORT TIME PERIOD
