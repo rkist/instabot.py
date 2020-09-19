@@ -98,7 +98,5 @@ ENV/
 .idea/
 *.iml
 
-.vscode
-
 *.db
 login.botconf
